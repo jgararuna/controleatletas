@@ -8,8 +8,12 @@ objetos e técnicas de programação).
 Características
 ---------------
 
-Posição(ões), perna de chute, número de títulos(estaduais, nacionais, continentais e mundiais), time(s) atual e passado(s), 
-títulos individeuais e com a equipe.
+Categoria; 
+Posição; 
+Perna de chute, times;  
+Títulos(individuais e com a equipe);
+Equipes que defende e que já defendeu;
+Lesões que já sofreu e sua gravidade. 
 
 
 Desenvolvimento
