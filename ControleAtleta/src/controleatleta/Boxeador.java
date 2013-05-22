@@ -6,7 +6,7 @@ public class Boxeador extends Atleta {
 
     private char categoria; // A=Amador P=Profissional
     private char estilo; // O=Ortodoxo(destro) S=Southpaw(canhoto)
-    private ArrayList<Premiacao> premiacoes;
+    private ArrayList<Premiacoes> premiacoes;
     private Double envergadura; // Em cm
     private int totalLutas;
     private int totalVitorias;
@@ -75,11 +75,11 @@ public class Boxeador extends Atleta {
         this.totalLutas = numLutas;
     }
 
-    public ArrayList<Premiacao> getPremiacoes() {
+    public ArrayList<Premiacoes> getPremiacoes() {
         return premiacoes;
     }
 
-    public void setPremiacoes(ArrayList<Premiacao> premiacoes) {
+    public void setPremiacoes(ArrayList<Premiacoes> premiacoes) {
         this.premiacoes = premiacoes;
     }
 
