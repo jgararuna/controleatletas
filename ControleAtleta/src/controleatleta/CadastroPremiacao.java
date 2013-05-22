@@ -21,8 +21,8 @@ public class CadastroPremiacao extends javax.swing.JDialog {
 
         jButtonCancelar = new javax.swing.JButton();
         jButtonAdicionar = new javax.swing.JButton();
-        jLabelTitulo = new javax.swing.JLabel();
-        jTextFieldTitulo = new javax.swing.JTextField();
+        jLabelPremiacao = new javax.swing.JLabel();
+        jTextFieldPremiacao = new javax.swing.JTextField();
         jLabelAno = new javax.swing.JLabel();
         jTextFieldAno = new javax.swing.JTextField();
 
@@ -40,7 +40,7 @@ public class CadastroPremiacao extends javax.swing.JDialog {
             }
         });
 
-        jLabelTitulo.setText("Titulo:");
+        jLabelPremiacao.setText("Premiação:");
 
         jLabelAno.setText("Ano:");
 
@@ -48,18 +48,17 @@ public class CadastroPremiacao extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelTitulo)
+                            .addComponent(jLabelPremiacao)
                             .addComponent(jLabelAno))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextFieldAno, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextFieldTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)))
+                            .addComponent(jTextFieldPremiacao, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButtonAdicionar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -68,12 +67,11 @@ public class CadastroPremiacao extends javax.swing.JDialog {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 97, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelTitulo)
-                    .addComponent(jTextFieldTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelPremiacao)
+                    .addComponent(jTextFieldPremiacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -98,7 +96,7 @@ private void jButtonAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//
         jTextFieldAno.requestFocus();
         return;
     }
-    premiacao = new Premiacao(jTextFieldTitulo.getText(), Integer.parseInt(jTextFieldAno.getText()));
+    premiacao = new Premiacao(jTextFieldPremiacao.getText(), Integer.parseInt(jTextFieldAno.getText()));
     this.setVisible(false);
 }//GEN-LAST:event_jButtonAdicionarActionPerformed
 
@@ -152,8 +150,8 @@ private void jButtonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//G
     private javax.swing.JButton jButtonAdicionar;
     private javax.swing.JButton jButtonCancelar;
     private javax.swing.JLabel jLabelAno;
-    private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JLabel jLabelPremiacao;
     private javax.swing.JTextField jTextFieldAno;
-    private javax.swing.JTextField jTextFieldTitulo;
+    private javax.swing.JTextField jTextFieldPremiacao;
     // End of variables declaration//GEN-END:variables
 }
