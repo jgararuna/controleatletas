@@ -706,6 +706,9 @@
                   </StringArray>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxEstiloActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldEnvergadura">
             </Component>
@@ -789,6 +792,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAdicionarPremiacaoActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="CadastroBoxeador_jButtonAdicionarPremiacao"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonRemoverPremiacao">
               <Properties>
