@@ -78,7 +78,7 @@ public class CadastroBoxeador extends javax.swing.JFrame {
 
     private void preencherCampos() {
         ArrayList<String> telefones;
-        ArrayList<Premiacao> premiacoes;
+        ArrayList<Premiacoes> premiacoes;
 
         jTextFieldAltura.setText(Double.toString(umBoxeador.getAltura()));
         jTextFieldBairro.setText(umBoxeador.getEndereco().getBairro());
@@ -117,7 +117,7 @@ public class CadastroBoxeador extends javax.swing.JFrame {
 
         premiacaoListModel.clear();
         premiacoes = umBoxeador.getPremiacoes();
-        for (Premiacao p : premiacoes) {
+        for (Premiacoes p : premiacoes) {
             premiacaoListModel.addElement(p);
         }
 
@@ -286,7 +286,7 @@ public class CadastroBoxeador extends javax.swing.JFrame {
     private void salvarRegistro() {
         Endereco endereco;
         ArrayList<String> telefones;
-        ArrayList<Premiacao> premiacoes;
+        ArrayList<Premiacoes> premiacoes;
         Date dataNascimento;
 
         if (this.validarCampos() == false) {
@@ -319,10 +319,10 @@ public class CadastroBoxeador extends javax.swing.JFrame {
             telefones.add(telefonesListModel.getElementAt(i).toString());
         }
 
-        premiacoes = new ArrayList<Premiacao>();
+        premiacoes = new ArrayList<Premiacoes>();
         for (int i = 0; i < premiacaoListModel.size(); i++) {
-            Premiacao premiacao = (Premiacao) premiacaoListModel.getElementAt(i);
-            premiacoes.add(premiacao);
+            Premiacoes premiacao = (Premiacoes) premiacaoListModel.getElementAt(i);
+            premiacao.add(premiacao);
         }
 
         if (novoRegistro == true) {
@@ -1111,10 +1111,10 @@ private void jButtonPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//
     }
 
 private void jButtonAdicionarPremiacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAdicionarPremiacaoActionPerformed
-    CadastroLesao cadastro = new CadastroLesao(this, true);
+    CadastroPremiacao cadastro = new CadastroPremiacao(this, true);
     cadastro.setVisible(true);
-    if (cadastro.getPremiacao() != null) {
-        premiacaoListModel.addElement(cadastro.getPremiacao());
+    if (cadastro.getPremiacoes() != null) {
+        premiacaoListModel.addElement(cadastro.getPremiacoes());
     }
     cadastro.dispose();
 }//GEN-LAST:event_jButtonAdicionarPremiacaoActionPerformed
