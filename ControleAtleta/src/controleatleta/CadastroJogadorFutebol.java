@@ -1111,10 +1111,10 @@ private void jButtonPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//
     }
 
 private void jButtonAdicionarPremiacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAdicionarPremiacaoActionPerformed
-    CadastroPremiacao cadastro = new CadastroPremiacao(this, true);
+    CadastroLesao cadastro = new CadastroLesao(this, true);
     cadastro.setVisible(true);
-    if (cadastro.getPremiacao() != null) {
-        premiacaoListModel.addElement(cadastro.getPremiacao());
+    if (cadastro.getLesao() != null) {
+        premiacaoListModel.addElement(cadastro.getLesao());
     }
     cadastro.dispose();
 }//GEN-LAST:event_jButtonAdicionarPremiacaoActionPerformed
