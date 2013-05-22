@@ -31,7 +31,4 @@ public class Premiacoes {
         return this.ano + " - " + this.premiacoes;
     }
 
-    void add(Premiacoes premiacao) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
